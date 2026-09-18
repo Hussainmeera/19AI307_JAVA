@@ -1,58 +1,48 @@
-# Ex.No:1(D) USER DEFINED METHOD.
+# Ex.No:1(C) CONTROL STATEMENTS
 
 ## AIM:
-To create a Java program print area of rectangle by defining instance method and local variable value as 10,20 .[Class Name is ‘Area’ function name is ‘calculateArea()’ and return type of function is ’void’
+To develop a Java program to check given number is zero or not.
 
 ## ALGORITHM :
 1.	Start the program.
-2.	Define a class named 'Area'
-3.	Declare a public method named 'calculateArea' with no parameters
-4.	Inside the 'calculateArea' method:
-a)	Declare a Double variable 'length' and assign it the value 10.0
-b)	Declare a Double variable 'width' and assign it the value 20.0
-c)	Calculate the area by multiplying 'length' and 'width' and store the result in a Double variable 'area'
-d)	Print the calculated area using the System.out.println statement
-5.	Define the 'main' method as static
-6.	Inside the 'main' method:
-a)	Create an instance of the 'Area' class called 'rectangle'
-b)	Call the 'calculateArea' method on the 'rectangle' object
-
-
-
+2.	Declare an integer variable 'num'
+3.	Create a Scanner object 'sc' to read input from the user
+4.	Read an integer input from the user and store it in 'num'
+5.	Check if 'num' is equal to 0:
+a.	If true, print "Given number is Zero"
+b.	If false, print 'num' followed by " is Non-Zero"
+6.	End
 
 ## PROGRAM:
- ```
-/*
-Program to implement a User Defined Method using Java
-Developed by: DINESH SREE VATHSAN A
-RegisterNumber: 212224060070
-*/
-```
+
 
 ## Sourcecode.java:
+
 ```
-import java.util.*;
-public class Area 
+import java.util.Scanner;
+
+public class Demo
 {
-       public void calculateArea() 
-       {
-        float length = 10;
-        float width = 20;
-        float area = length * width;
-        System.out.println("Area of Rectangle is " + area);
-       }
-       public static void main(String[] args) 
-       {
-       Area obj=new Area();
-       obj.calculateArea();
-       }
+    public static void main(String[] args)
+    {
+       Scanner sc=new Scanner(System.in);
+       int num=sc.nextInt();
+        if(num==0)
+        System.out.println("Given number is Zero");
+        else
+        {
+        	 System.out.println(num+ " is Non-Zero");
+        }
+    }
 }
+
+
 ```
+
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/b381fe96-a993-437d-9d4d-98d2cc383e19)
-
+<img width="504" alt="image" src="https://github.com/user-attachments/assets/9b9a2b38-6e99-4eba-b01f-e2e592e15150" />
 
 ## RESULT:
 
-Thus, the Java program to print area of rectangle by defining instance method and local variable value as 10,20 was created successfully.
+Thus, the Java program to check given number is zero or not was created successfully.
